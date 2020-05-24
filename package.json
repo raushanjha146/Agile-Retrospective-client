@@ -49,7 +49,7 @@
     "prod": "NODE_ENV=production concurrently --kill-others \"npm run watch\" \"ts-node-dev --respawn --transpileOnly server.ts\" \"ts-node-dev --transpileOnly ngrok.ts\"",
     "start": "npm run dev:client",
     "dev:server": "ts-node-dev --respawn --transpileOnly server.ts",
-    "dev:client": "webpack-dev-server   --mode development --open",
+    "dev:client": "webpack-dev-server --port $PORT --host 0.0.0.0  --mode development --open",
     "watch": "webpack --watch"
   },
   "devDependencies": {
