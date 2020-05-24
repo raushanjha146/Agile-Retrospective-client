@@ -45,7 +45,8 @@
   },
   "scripts": {
     "tsc": "tsc",
-    "postinstall": "npm install && npm run tsc",
+    "prepare": "npm install",
+    "postinstall": "npm run tsc",
     "prod": "NODE_ENV=production concurrently --kill-others \"npm run watch\" \"ts-node-dev --respawn --transpileOnly server.ts\" \"ts-node-dev --transpileOnly ngrok.ts\"",
     "start": "npm run dev:client",
     "dev:server": "ts-node-dev --respawn --transpileOnly server.ts",
