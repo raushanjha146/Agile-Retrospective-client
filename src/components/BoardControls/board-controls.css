@@ -1,0 +1,51 @@
+#board-controls {
+  margin: 0 20px;
+  padding: 5px 0;
+  display: flex;
+  height: max-content;
+  align-items: center;
+  justify-content: space-between;
+  grid-row: 1 / span 1;
+  grid-column: 1 / span 12
+}
+
+.button__sort {
+  display: flex;
+  justify-content: space-between;
+}
+
+.button__sort .gg-sort-za,
+.button__sort .gg-sort-az {
+  display: inline-block;
+  margin: auto;
+}
+
+#board-title {
+  display: flex;
+  align-items: center;
+}
+
+.board-title--text {
+  display: block;
+  margin: 0;
+  padding: 5px 0px;
+  font-size: 1.4rem;
+  font-weight: 600;
+  border: none;
+  background-color: var(--app--background-color);
+}
+
+.board-title--actions {
+  display: flex;
+  margin-left: 5px;
+}
+
+.board-actions {
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+}
+
+.stars-remaining {
+  font-size: 1.2rem;
+}

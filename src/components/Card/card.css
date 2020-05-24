@@ -1,0 +1,109 @@
+:root {
+  --retro-card-text-size: 1.2rem;
+}
+
+.card-container {
+  margin-top: 0.5rem;
+  padding: 0.8em 0.8em;
+  display: flex;
+  flex-direction: column;
+  font-size: var(--retro-card-text-size);
+  background-color: white;
+  position: relative;
+
+  background: #FFFFFF;
+  box-shadow: 0px 4px 8px rgba(0, 78, 122, 0.1);
+  border-radius: 8px;
+}
+
+.card-container textarea:focus {
+  outline: none;
+}
+
+.card-container .edit-link {
+  display: none;
+  padding-bottom: 5px;
+  margin: 0 5px 0 10px;
+}
+
+.card-container:hover .edit-link {
+  display: flex;
+}
+
+.edit-link .gg-pen {
+  margin: auto;
+}
+
+.card-container .card--content,
+.card-container textarea {
+  margin: 0 0 1em 0;
+  min-height: 3em;
+}
+
+.card-container .card--content p {
+  margin: 0;
+}
+
+.card-container .card--content img {
+  width: 100%;
+}
+
+.card-container textarea {
+  font-size: var(--retro-card-text-size);
+  resize: none;
+  width: 100%;
+  padding: 0;
+  border: 0;
+  background: none;
+}
+
+.card-container .star-count,
+.card-container .user-stars {
+  vertical-align: middle;
+  margin-right: 10px;
+  user-select: none;
+}
+
+.star {
+  padding: 2px 5px;
+  font-size: 14pt;
+  user-select: none;
+  opacity: 0.7;
+}
+.star-button {
+  cursor: pointer;
+}
+.star-button:hover,
+.star-button:focus {
+  opacity: 1.0;
+}
+
+.undo-button {
+  padding: 2px 5px;
+}
+
+.button__save:hover {
+  color: var(--green);
+}
+
+.card--footer {
+  height: 2em;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.card--footer .starring {
+  display: flex;
+  align-items: center;
+}
+
+.card--footer button[type="submit"] {
+  font-size: 14pt;
+  padding: 0;
+}
+
+.card--footer .button--delete {
+  margin-left: 10px;
+}

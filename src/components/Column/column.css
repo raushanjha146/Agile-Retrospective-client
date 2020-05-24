@@ -1,0 +1,48 @@
+.body-row > button {
+  width: 100%;
+  padding: 0 0 0.2em 0;
+}
+
+.card--button__add {
+  font-weight: 200;
+  font-size: 1.6em;
+}
+
+.column {
+  flex-grow: 1;
+  margin: 20px 10px;
+}
+
+/* Simple implementation to give unique background colors to cards in specific columns */
+.column:nth-child(5n + 1) .card-container {
+  border-left: 8px solid var(--green);
+}
+
+.column:nth-child(5n + 2) .card-container {
+  border-left: 8px solid #3aa1d0;
+}
+
+.column:nth-child(5n + 3) .card-container {
+  border-left: 8px solid #b371e3;
+}
+
+.column:nth-child(5n + 4) .card-container {
+  border-left: 8px solid #faa02a;
+}
+
+.column:nth-child(5n + 5) .card-container {
+  border-left: 8px solid #dd2ab6;
+}
+
+.column-edit > input {
+  /* The same font-size and margin as a h2 element */
+  font-size: 1.5em;
+  margin: 1.0em 0;
+}
+
+.header-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+

@@ -1,0 +1,44 @@
+.column-header {
+  flex: 0 0 auto;
+  margin: 1.0rem 0;
+  width: 100%;
+}
+
+.column-header input {
+  background-color: var(--app--background-color);
+}
+
+.column-header--text {
+  display: block;
+  padding: 0;
+  border: 0;
+  font-size: 1.5em;
+  height: 1.0em;
+  font-weight: 600;
+  width: 100%;
+}
+
+.column-header--editing .column-header--text {
+  margin-bottom: 0.5rem;
+}
+
+.column-header--controls button,
+.column-header--controls .button--delete {
+  flex: 0 0 auto;
+  padding: 0 2px;
+  margin-right: 5px;
+}
+
+.column-header--controls .button--delete {
+  padding: 0 6px;
+}
+
+.column-header--controls,
+.column--header--controls--primary {
+  display: flex;
+  align-items: center;
+}
+
+.column-header--controls {
+  justify-content: space-between;
+}

@@ -1,0 +1,71 @@
+:root {
+  --app--background-color: #e6e6e6;
+  --green: #51be51;
+  --text-color-primary: #363636;
+  --button--background-color: #f8fbfb;
+  --button--background-color__hover: #ffffff;
+}
+
+html, body, #react-root {
+  height: 100%;
+  background-color: var(--app--background-color);
+}
+
+body {
+  margin: 0;
+}
+
+html,
+body,
+#react-root,
+input,
+textarea {
+  font-family: -apple-system, BlinkMacSystemFont,"Segoe UI","Roboto", "Droid Sans","Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 1.0rem;
+  color: var(--text-color-primary);
+}
+
+footer {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+}
+
+h2 {
+  font-size: 1.5em;
+  margin: 1.0em 0;
+}
+
+.alert {
+  display: none;
+}
+
+.alert--show {
+  position: fixed;
+  bottom: 0px;
+  display: block;
+}
+
+.alert-star-limit {
+  border: 1px solid orangered;
+  background-color: #363636;
+  width: 100%;
+  color: white;
+  font-size: 1.5em;
+  padding: 15px 10px
+}
+
+button {
+  background-color: var(--button--background-color);
+  border: none;
+  cursor: pointer;
+}
+
+button:hover,
+button:focus {
+  background-color: var(--button--background-color__hover)
+}
+
+.button {
+  padding: 5px 10px;
+  cursor: pointer;
+}
