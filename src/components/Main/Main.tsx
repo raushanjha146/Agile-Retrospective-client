@@ -19,8 +19,9 @@ export enum SortDirection {
 };
 
 export const Main = (props: MainProps) => {
+  console.log("props: MainProps : 1");
   const { state: { columns }, actions } = useOvermind();
-  const [boardTitle, updateBoardTitle] = React.useState("" as string);
+  const [boardTitle, updateBoardTitle] = React.useState("test" as string);
   const [sortDirection, updateSortDirection] = React.useState(SortDirection.desc);
   const [remainingStars, updateRemainingStars] = React.useState(null as unknown as number);
   let { state: { mode } } = useOvermind();
